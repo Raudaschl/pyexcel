@@ -1,6 +1,6 @@
 from .factory import renderer_registry
 from pyexcel.internal import soft_renderer_registry, preload_a_plugin
-from . import _texttable, _excel, _database  # noqa
+from . import _texttable  # noqa
 from pyexcel._compact import PY2
 
 

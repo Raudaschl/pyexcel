@@ -43,7 +43,7 @@ def preload_a_plugin(registry, file_type):
         registry.pop(__file_type)
 
 
-black_list = ['pyexcel_io', 'pyexcel_webio',
+black_list = ['pyexcel_webio',
               'pyexcel_xlsx', 'pyexcel_xls',
               'pyexcel_ods3', 'pyexcel_ods',
               'pyexcel_odsr', 'pyexcel_xlsxw']

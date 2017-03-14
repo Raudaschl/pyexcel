@@ -1,7 +1,5 @@
 from .factory import parser_registry
 from pyexcel.internal import soft_parser_registry, preload_a_plugin
-from . import _excel  # noqa
-from . import _database  # noqa
 from pyexcel._compact import PY2
 
 
