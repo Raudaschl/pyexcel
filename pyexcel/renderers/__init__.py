@@ -1,7 +1,17 @@
-from .factory import renderer_registry
+from .factory import renderer_registry, Renderer  # noqa
 from pyexcel.internal import soft_renderer_registry, preload_a_plugin
-from . import _texttable  # noqa
+from pyexcel.internal import register_plugins
 from pyexcel._compact import PY2
+
+
+__texttable__ = [
+    {
+        'plugin_type': 'renderer',
+        'submodule': '_texttable',
+        'file_types': ['texttable']
+    }
+]
+register_plugins(__texttable__, 'pyexcel.renderers')
 
 
 def get_renderer(file_type):
